@@ -38,8 +38,12 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			style="
 					background: url(<?php echo $bgUrl ?>); 
 					background-size: cover; 
-					background-position: center center
-					position: relative
+					background-position: center center;
+					position: absolute;
+					width: 100%;
+					height: 100vh;
+					top: 0;
+					left: 0
 			"
 		>
 		</div>
