@@ -17,6 +17,8 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 	
 		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
 						<style>
+
+						
 					@keyframes Q4S1Fg {
 					from {
 							-webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
@@ -27,14 +29,29 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 							transform: scale(1) translate3d(0, 0, 0)
 					}
 				}
+
+				@keyframes Q2S1Bg {
+					from {
+							-webkit-transform: scale(1.05) translate3d(-30px, 0, 0);
+							transform: scale(1.05) translate3d(-30px, 0, 0)
+					}
+					to {
+							-webkit-transform: scale(1) translate3d(0, 0, 0);
+							transform: scale(1) translate3d(0, 0, 0)
+					}
+			}
 				
-				#<?php echo $at['uniq_name'] ?>.active .layer-animation {
+				#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
+					animation: Q2S1Bg 2s;
+				}
+
+			#<?php echo $at['uniq_name'] ?>.active .layer-overlay-animation {
 					animation: Q4S1Fg 2s;
 				}
 
 	</style>
 		<div
-			class="layer-animation"
+			class="layer-bg-animation"
 			style="
 					background: url(<?php echo $bgUrl ?>); 
 					background-size: cover; 
@@ -48,7 +65,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 		>
 		</div>
 		<div 
-		class="layer-animation"
+		class="layer-overlay-animation"
 			style="background: url(<?php echo $overlayUrl ?>); 
 			background-size: cover; 
 			background-position: center center;
