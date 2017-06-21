@@ -1,6 +1,6 @@
 <?php
 
-function acn_fullpage_sc( $atts ) {
+function acn_fullpage_sc( $atts, $content ) {
 	$at = shortcode_atts([
 		"unique_name" => "fullpage"
 	], $atts);
