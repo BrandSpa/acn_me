@@ -27,12 +27,15 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
     }
 	}
 	
-	#<?php echo $at['uniq_name'] ?>.active {
+	/*#<?php echo $at['uniq_name'] ?>.active {
 		animation-name: Q4S1Fg;
-	}
+	}*/
 
 	</style>
+
 		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
+		<div class="layer-container" style="position:relative">
+		<?php echo do_shortcode($content) ?>
 		<div
 			class="layer-animation"
 			style="
@@ -60,8 +63,8 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			"
 		>
 		</div>
-
-			<?php echo do_shortcode($content) ?>
+		</div>
+			
 		</div>
 	<?php
 	return ob_get_clean();
