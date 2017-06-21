@@ -10,6 +10,11 @@ function acn_fullpage_sc( $atts, $content ) {
 		<div id="<?php echo $at['unique_name'] ?>">
 			<?php echo do_shortcode($content) ?>
 		</div>
+		<script>
+			$(document).ready(function() {
+				$('#<?php echo $at['unique_name'] ?>"').fullpage();
+			});
+		</script>
 	<?php
 	return ob_get_clean();
 }
