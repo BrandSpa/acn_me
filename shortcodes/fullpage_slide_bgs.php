@@ -21,8 +21,8 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 						
 					@keyframes Q4S1Fg {
 					from {
-							-webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
-							transform: scale(1.2) translate3d(-30px, 0, 0)
+							-webkit-transform: scale(1.2) translate3d(-70px, 0, 0);
+							transform: scale(1.2) translate3d(-70px, 0, 0)
 					}
 					to {
 							-webkit-transform: scale(1) translate3d(0, 0, 0);
@@ -42,11 +42,11 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			}
 				
 				#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
-					animation: Q2S1Bg 4s;
+					animation: Q2S1Bg 2s;
 				}
 
 			#<?php echo $at['uniq_name'] ?>.active .layer-overlay-animation {
-					animation: Q4S1Fg 3s;
+					animation: Q4S1Fg 4s;
 				}
 
 	</style>
