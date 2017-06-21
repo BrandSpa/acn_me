@@ -6,7 +6,7 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 		"bg_color" => "#fff"
 	], $atts);
 	
-	$bgUrl = wp_get_attachment_url($slide['bg_img']); 
+	$bgUrl = wp_get_attachment_url( $at['bg_img'] ); 
 
 	ob_start();
 
