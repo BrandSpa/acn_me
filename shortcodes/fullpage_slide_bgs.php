@@ -15,27 +15,27 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 
 	?>
 
-	<style>
-		@keyframes Q4S1Fg {
-    from {
-        -webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
-        transform: scale(1.2) translate3d(-30px, 0, 0)
-    }
-    to {
-        -webkit-transform: scale(1) translate3d(0, 0, 0);
-        transform: scale(1) translate3d(0, 0, 0)
-    }
-	}
-	
-	/*#<?php echo $at['uniq_name'] ?>.active {
-		animation-name: Q4S1Fg;
-	}*/
-
-	</style>
-
 		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
 		<div class="layer-container" style="position:relative">
 		<?php echo do_shortcode($content) ?>
+			<style>
+					@keyframes Q4S1Fg {
+					from {
+							-webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
+							transform: scale(1.2) translate3d(-30px, 0, 0)
+					}
+					to {
+							-webkit-transform: scale(1) translate3d(0, 0, 0);
+							transform: scale(1) translate3d(0, 0, 0)
+					}
+				}
+				
+				/*#<?php echo $at['uniq_name'] ?>.active {
+					animation-name: Q4S1Fg;
+				}*/
+
+	</style>
+	
 		<div
 			class="layer-animation"
 			style="
