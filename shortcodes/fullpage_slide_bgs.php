@@ -14,10 +14,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 	ob_start();
 
 	?>
-
-		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
-			<?php echo do_shortcode($content) ?>
-					<style>
+				<style>
 					@keyframes Q4S1Fg {
 					from {
 							-webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
@@ -35,7 +32,8 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				}
 
 	</style>
-		
+		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
+					
 		<div
 			class="layer-animation"
 			style="
@@ -63,7 +61,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			"
 		>
 		</div>
-			
+				<?php echo do_shortcode($content) ?>
 		</div>
 	<?php
 	return ob_get_clean();
