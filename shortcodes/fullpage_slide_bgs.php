@@ -27,7 +27,9 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			background-position: center center;
 			position: absolute;
 			width: 100%;
-			height: 100vh
+			height: 100vh;
+			top: 0;
+			left: 0
 			"
 		>
 		</div>
