@@ -11,7 +11,7 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 	ob_start();
 
 	?>
-		<div class="section" style="background: url(<?php echo $bgUrl ?>) cover">
+		<div class="section" style="background: url(<?php echo $bgUrl ?>); background-size: cover">
 			<?php echo do_shortcode($content) ?>
 		</div>
 	<?php
