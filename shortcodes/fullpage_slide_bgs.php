@@ -29,7 +29,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				}
 				
 				#<?php echo $at['uniq_name'] ?>.active {
-					opacity: 0
+					animation: Q4S1Fg 2s;
 				}
 
 	</style>
