@@ -2,12 +2,16 @@
 
 function acn_fullpage_slide_sc( $atts, $content ) {
 	$at = shortcode_atts([
-		"unique_name" => "fullpage"
+		"bg_img" => "",
+		"bg_color" => "#fff"
 	], $atts);
+	
+	$bgUrl = wp_get_attachment_url($slide['bg_img']); 
 
 	ob_start();
+
 	?>
-		<div class="section" style="background: url(http://acninternational.org/wp-content/uploads/2017/06/CoverOk.jpg)">
+		<div class="section" style="background: url(<?php echo $bgUrl ?>)">
 			<?php echo do_shortcode($content) ?>
 		</div>
 	<?php

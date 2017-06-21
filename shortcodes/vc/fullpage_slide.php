@@ -1,6 +1,10 @@
 <?php
   function acn_fullpage_slide_vc() {
     $params = [
+      [
+        "type" => "attach_image",
+        "param_name" => "bg_img"
+      ],
 			[
 				"type" => "textarea_html",
 				"param_name" => "content"
