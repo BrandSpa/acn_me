@@ -32,14 +32,18 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 	}
 
 	</style>
-		<div class="section layer-animation" 
-			style="
+		<div class="section" 
+		>
+		<div
+			class="layer-animation"
+				style="
 			background: url(<?php echo $bgUrl ?>); 
 			background-size: cover; 
 			background-position: center center
 			position: relative
 			"
 		>
+		</div>
 		<div 
 		class="layer-animation"
 			style="background: url(<?php echo $overlayUrl ?>); 
