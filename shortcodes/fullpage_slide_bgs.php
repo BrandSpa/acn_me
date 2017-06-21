@@ -13,7 +13,26 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 	ob_start();
 
 	?>
-		<div class="section" 
+
+	<style>
+		@keyframes Q4S1Fg {
+    from {
+        -webkit-transform: scale(1.2) translate3d(-30px, 0, 0);
+        transform: scale(1.2) translate3d(-30px, 0, 0)
+    }
+    to {
+        -webkit-transform: scale(1) translate3d(0, 0, 0);
+        transform: scale(1) translate3d(0, 0, 0)
+    }
+	}
+	
+	.layer-animation {
+		animation-name: Q4S1Fg;
+		animation-duration: 3s;
+	}
+
+	</style>
+		<div class="section layer-animation" 
 			style="
 			background: url(<?php echo $bgUrl ?>); 
 			background-size: cover; 
@@ -22,6 +41,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			"
 		>
 		<div 
+		class="layer-animation"
 			style="background: url(<?php echo $overlayUrl ?>); 
 			background-size: cover; 
 			background-position: center center;
