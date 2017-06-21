@@ -3,7 +3,8 @@
 function acn_fullpage_slide_sc( $atts, $content ) {
 	$at = shortcode_atts([
 		"bg_img" => "",
-		"bg_color" => "#fff"
+		"bg_color" => "#fff",
+		"uniq_name" => "slide-" . uniqid() . rand(0, 100) 
 	], $atts);
 	
 	$bgUrl = wp_get_attachment_url( $at['bg_img'] ); 
@@ -11,7 +12,10 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 	ob_start();
 
 	?>
-		<div class="section" style="background: url(<?php echo $bgUrl ?>); background-size: cover">
+		<div 
+			id="<?php echo $at['uniq_name'] ?>"
+			class="section" 
+			style="background: url(<?php echo $bgUrl ?>); background-size: cover">
 			<?php echo do_shortcode($content) ?>
 		</div>
 	<?php

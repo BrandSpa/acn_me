@@ -4,7 +4,8 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 	$at = shortcode_atts([
 		"bg_img" => "",
 		"overlay_img" => "",
-		"bg_color" => "#000"
+		"bg_color" => "#000",
+		"uniq_name" => "slide-" . uniqid() . rand(0, 100) 
 	], $atts);
 	
 	$bgUrl = wp_get_attachment_url( $at['bg_img'] ); 
@@ -26,13 +27,13 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
     }
 	}
 	
-	.layer-animation {
+	#<?php echo $at['uniq_name'] ?>.active {
 		animation-name: Q4S1Fg;
 		animation-duration: 3s;
 	}
 
 	</style>
-		<div class="section">
+		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
 		<div
 			class="layer-animation"
 			style="
