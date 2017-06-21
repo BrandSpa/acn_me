@@ -7,7 +7,7 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 
 	ob_start();
 	?>
-		<div class="section">
+		<div class="section" style="background: url(http://acninternational.org/wp-content/uploads/2017/06/CoverOk.jpg)">
 			<?php echo do_shortcode($content) ?>
 		</div>
 	<?php
