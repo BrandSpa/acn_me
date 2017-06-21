@@ -2,7 +2,8 @@
 
 function acn_fullpage_sc( $atts, $content ) {
 	$at = shortcode_atts([
-		"unique_name" => "fullpage"
+		"unique_name" => "fullpage",
+		"anchor" => ""
 	], $atts);
 
 	ob_start();

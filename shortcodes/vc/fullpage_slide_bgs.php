@@ -1,9 +1,15 @@
 <?php
-  function acn_fullpage_slide_vc() {
+  function acn_fullpage_slide_bgs_vc() {
     $params = [
       [
+				"heading" => "Background image",
         "type" => "attach_image",
         "param_name" => "bg_img"
+      ],
+			[
+				"heading" => "Overlay image",
+        "type" => "attach_image",
+        "param_name" => "overlay_img"
       ],
       [
         "type" => "textfield",
@@ -17,8 +23,8 @@
 
     vc_map(
       array(
-        "name" =>  "FullPage Slide",
-        "base" => "acn_fullpage_slide",
+        "name" =>  "FullPage Slide layers",
+        "base" => "acn_fullpage_slide_bgs",
         "category" =>  "ACN",
 				"content_element" => true,
         "params" => $params
@@ -26,8 +32,8 @@
     );
 
 		if ( class_exists( 'WPBakeryShortCodesContainer' ) ) {
-    	class WPBakeryShortCode_acn_fullpage_slide extends WPBakeryShortCode {}
+    	class WPBakeryShortCode_acn_fullpage_slide_bgs extends WPBakeryShortCode {}
 		}
   }
 
-add_action( 'vc_before_init', 'acn_fullpage_slide_vc' );
+add_action( 'vc_before_init', 'acn_fullpage_slide_bgs_vc' );
