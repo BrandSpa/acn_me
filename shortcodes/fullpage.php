@@ -11,7 +11,7 @@ function acn_fullpage_sc( $atts, $content ) {
 			<?php echo do_shortcode($content) ?>
 		</div>
 		<script>
-			$(document).ready(function() {
+			onLoad(function() {
 				$('#<?php echo $at['unique_name'] ?>"').fullpage();
 			});
 		</script>
