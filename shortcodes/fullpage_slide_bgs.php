@@ -31,6 +31,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				
 				#<?php echo $at['uniq_name'] ?>.active > .layer-animation {
 					animation-name: Q4S1Fg;
+					animation-duration: 3s;
 				}
 
 	</style>
