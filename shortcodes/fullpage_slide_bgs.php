@@ -42,11 +42,11 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			}
 				
 				#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
-					animation: Q2S1Bg 2s;
+					animation: Q2S1Bg 5s;
 				}
 
 			#<?php echo $at['uniq_name'] ?>.active .layer-overlay-animation {
-					animation: Q4S1Fg 4s;
+					animation: Q4S1Fg 5s;
 				}
 
 	</style>
