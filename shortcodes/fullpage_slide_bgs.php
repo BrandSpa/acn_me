@@ -43,7 +43,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				from {
 						-webkit-transform: translate3d(0, 100px, 0);
 						transform: translate3d(0, 100px, 0);
-						opacity: 0.05
+						opacity: .5
 				}
 
 				to {
@@ -61,7 +61,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			animation: Q4S1Fg 3s;
 		}
 
-		.active > .animate-text {
+		#<?php echo $at['uniq_name'] ?>.active > .animate-text {
 			animation: textAnim 500ms;
 		}
 
