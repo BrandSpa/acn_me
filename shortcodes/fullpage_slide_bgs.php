@@ -61,7 +61,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			animation: Q4S1Fg 3s;
 		}
 
-		#<?php echo $at['uniq_name'] ?>.active > .animate-text {
+		.active .animate-text {
 			animation: textAnim 500ms;
 		}
 
