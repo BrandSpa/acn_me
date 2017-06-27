@@ -18,7 +18,7 @@
         }
       }
   </script>
-  
+
   <style>
     .lazyload,
     .lazyloaded,
@@ -33,7 +33,8 @@
         opacity: 0
     }
     .lazyloaded {
-        opacity: 1
+        opacity: 1;
+        background-color: transparent;
     }
   </style>
 </head>
