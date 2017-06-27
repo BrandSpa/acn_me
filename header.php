@@ -20,6 +20,9 @@
   </script>
 
   <style>
+  body, html {
+    overflow-x: hidden;
+  }
     .lazyload,
     .lazyloaded,
     .lazyloading {
