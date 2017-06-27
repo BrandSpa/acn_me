@@ -67,6 +67,10 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 
 	</style>
 
+	<div class="section__content" style="position: relative; z-index: 3;">
+			<?php echo do_shortcode($content) ?>
+	</div>
+
 		<div
 			class="layer-bg-animation lazyload"
 			data-bgset="<?php echo $bgUrl ?> 1200w"
@@ -77,26 +81,28 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 					width: 100%;
 					height: 100%;
 					top: 0;
-					left: 0
+					left: 0;
+					z-index: 1;
 			"
 		>
 		</div>
 
 		<div 
-		class="layer-overlay-animation lazyload"
-		data-bgset="<?php echo $overlayUrl ?> 1200w"
-		style="
-			background-size: cover; 
-			background-position: center center;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0
-			"
-		>
+			class="layer-overlay-animation lazyload"
+			data-bgset="<?php echo $overlayUrl ?> 1200w"
+			style="
+				background-size: cover; 
+				background-position: center center;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				"
+			>
 		</div>
-				<?php echo do_shortcode($content) ?>
+			
 		</div>
 	<?php
 	return ob_get_clean();
