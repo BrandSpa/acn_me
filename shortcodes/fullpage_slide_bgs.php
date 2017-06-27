@@ -43,7 +43,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				from {
 						-webkit-transform: translate3d(0, 100px, 0);
 						transform: translate3d(0, 100px, 0);
-						opacity: .5
+						opacity: 0
 				}
 
 				to {
@@ -62,7 +62,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 		}
 
 		.active .animate-text {
-			animation: textAnim 3s;
+			animation: textAnim 1s;
 		}
 
 	</style>
