@@ -62,7 +62,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 		}
 
 		.active .animate-text {
-			animation: textAnim 1s;
+			animation: textAnim 2s;
 		}
 
 	</style>
