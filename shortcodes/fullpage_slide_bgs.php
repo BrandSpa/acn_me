@@ -15,7 +15,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 
 	?>
 	
-		<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
+	<div id="<?php echo $at['uniq_name'] ?>" class="section" id="<?php echo $at['uniq_name'] ?>">
 			<style>
 					@keyframes Q4S1Fg {
 					from {
@@ -66,10 +66,11 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 		}
 
 	</style>
+
 		<div
-			class="layer-bg-animation"
+			class="layer-bg-animation lazyload"
+			data-bgset="<?php echo $bgUrl ?> 1200w"
 			style="
-					background: url(<?php echo $bgUrl ?>); 
 					background-size: cover; 
 					background-position: center center;
 					position: absolute;
@@ -80,9 +81,11 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			"
 		>
 		</div>
+
 		<div 
-		class="layer-overlay-animation"
-			style="background: url(<?php echo $overlayUrl ?>); 
+		class="layer-overlay-animation lazyload"
+		data-bgset="<?php echo $overlayUrl ?> 1200w"
+		style="
 			background-size: cover; 
 			background-position: center center;
 			position: absolute;

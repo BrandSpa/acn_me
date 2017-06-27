@@ -4,10 +4,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/3.0.0/lazysizes.min.js"></script>
+<script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
 <script>
-	new WOW().init();
+
 </script>
 </body>
 </html>
