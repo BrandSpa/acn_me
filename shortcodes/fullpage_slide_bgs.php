@@ -28,7 +28,7 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 					}
 				}
 
-				@keyframes Q2S1Bg {
+			@keyframes Q2S1Bg {
 					from {
 							-webkit-transform: scale(1.05) translate3d(-30px, 0, 0);
 							transform: scale(1.05) translate3d(-30px, 0, 0)
@@ -38,6 +38,20 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 							transform: scale(1) translate3d(0, 0, 0)
 					}
 			}
+
+			@keyframes textAnim {
+				from {
+						-webkit-transform: translate3d(-50px, 0, 0);
+						transform: translate3d(-50px, 0, 0);
+						opacity: 0.05
+				}
+
+				to {
+					-webkit-transform: translate3d(0px, 0, 0);
+						transform: translate3d(0px, 0, 0);
+						opacity: 1
+				}
+			}
 				
 				#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
 					animation: Q2S1Bg 3s;
@@ -46,6 +60,10 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 			#<?php echo $at['uniq_name'] ?>.active .layer-overlay-animation {
 					animation: Q4S1Fg 3s;
 				}
+
+				#<?php echo $at['uniq_name'] ?>.active .animate-text {
+				animation: textAnim 1s;
+			}
 
 	</style>
 		<div

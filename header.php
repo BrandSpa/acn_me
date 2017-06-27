@@ -7,7 +7,7 @@
 	<title>ACN</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
-		<script>
+	<script>
       function onLoad(cb) {
         if (window.addEventListener)
           window.addEventListener("load", cb, false);
