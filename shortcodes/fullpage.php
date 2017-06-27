@@ -14,7 +14,8 @@ function acn_fullpage_sc( $atts, $content ) {
 		<script>
 			onLoad(function() {
 				$('#<?php echo $at['unique_name'] ?>').fullpage({
-					scrollBar: true
+					scrollOverflow: true,
+					scrollBar: false
 				});
 			});
 		</script>
