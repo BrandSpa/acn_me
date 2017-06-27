@@ -8,17 +8,18 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 	], $atts);
 	
 	$bgUrl = wp_get_attachment_url( $at['bg_img'] ); 
-
 	ob_start();
-
 	?>
+
 		<div 
 			id="<?php echo $at['uniq_name'] ?>"
 			class="section lazyload" 
 			data-bgset="<?php echo $bgUrl ?> 1200w"
-			style=" background-size: cover">
+			style=" background-size: cover"
+		>
 			<?php echo do_shortcode($content) ?>
 		</div>
+		
 	<?php
 	return ob_get_clean();
 }

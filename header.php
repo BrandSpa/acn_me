@@ -18,5 +18,22 @@
         }
       }
   </script>
+  <style>
+    .lazyload,
+    .lazyloaded,
+    .lazyloading {
+        transition: opacity .8s ease-out, -webkit-transform .8s ease-out;
+        transition: opacity .8s ease-out, transform .8s ease-out;
+        transition: opacity .8s ease-out, transform .8s ease-out, -webkit-transform .8s ease-out;
+        background-color: #000
+    }
+    .lazyload,
+    .lazyloading {
+        opacity: 0
+    }
+    .lazyloaded {
+        opacity: 1
+    }
+  </style>
 </head>
 <body>
