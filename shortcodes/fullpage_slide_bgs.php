@@ -41,14 +41,14 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 
 			@keyframes textAnim {
 				from {
-						-webkit-transform: translate3d(0, 50px, 0);
-						transform: translate3d(0, 50px, 0);
+						-webkit-transform: translateY(50px);
+						transform: translateY(50px);
 						opacity: 0
 				}
 
 				to {
-					-webkit-transform: translate3d(0, 0, 0);
-						transform: translate3d(0, 0, 0);
+					-webkit-transform: translateY(0);
+						transform: translateY(0);
 						opacity: 1
 				}
 			}
