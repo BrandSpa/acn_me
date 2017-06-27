@@ -14,8 +14,9 @@ function acn_fullpage_slide_sc( $atts, $content ) {
 	?>
 		<div 
 			id="<?php echo $at['uniq_name'] ?>"
-			class="section" 
-			style="background: url(<?php echo $bgUrl ?>); background-size: cover">
+			class="section lazyload" 
+			data-bgset="<?php echo $bgUrl ?> 1200w"
+			style=" background-size: cover">
 			<?php echo do_shortcode($content) ?>
 		</div>
 	<?php
