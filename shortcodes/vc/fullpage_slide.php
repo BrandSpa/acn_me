@@ -2,8 +2,14 @@
   function acn_fullpage_slide_vc() {
     $params = [
       [
+        "heading" => "Background image",
         "type" => "attach_image",
         "param_name" => "bg_img"
+      ],
+      [
+        "heading" => "Background image mobile",
+        "type" => "attach_image",
+        "param_name" => "bg_img_mobile"
       ],
       [
         "type" => "textfield",
