@@ -6,10 +6,20 @@
         "type" => "attach_image",
         "param_name" => "bg_img"
       ],
+      [
+				"heading" => "Background image mobile",
+        "type" => "attach_image",
+        "param_name" => "bg_img_mobile"
+      ],
 			[
 				"heading" => "Overlay image",
         "type" => "attach_image",
         "param_name" => "overlay_img"
+      ],
+      [
+				"heading" => "Overlay image mobile",
+        "type" => "attach_image",
+        "param_name" => "overlay_img_mobile"
       ],
       [
         "type" => "textfield",
