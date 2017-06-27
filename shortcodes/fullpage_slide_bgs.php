@@ -53,9 +53,9 @@ function acn_fullpage_slide_bgs_sc( $atts, $content ) {
 				}
 			}
 				
-				#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
-					animation: Q2S1Bg 3s;
-				}
+			#<?php echo $at['uniq_name'] ?>.active .layer-bg-animation {
+				animation: Q2S1Bg 3s;
+			}
 
 			#<?php echo $at['uniq_name'] ?>.active .layer-overlay-animation {
 					animation: Q4S1Fg 3s;
